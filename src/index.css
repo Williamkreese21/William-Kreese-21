@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Imbue", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand: #ffffff;
+  --color-surface: #0a0a0a;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-brand font-sans antialiased selection:bg-white selection:text-black;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
